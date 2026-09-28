@@ -5,7 +5,9 @@ import react from "@vitejs/plugin-react";
 // It only needs to know the backend's base URL (see src/api/chatApi.js).
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 5173,
-  },
+  // server: {
+  //   port: 5173,
+  // },
+  base: "/hospital-chat-frontend"
+
 });
